@@ -11,6 +11,10 @@ html {
     line-height: 1.4;
     color: #000000;
     background-color: bisque;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 .g-container {
     display: grid;
@@ -54,6 +58,33 @@ footer {
     Medium Layout CSS
    ========================================================================== */
 /* For medium sized screens */
-   @media screen and(700px <= width >= 1000px) {
-    /* No new changes to the html */
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+/* No new changes to the html */
+    .g-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header header"
+        "main AC"
+        "main AD"
+        "main section"
+        "footer footer";
+    }
 } 
+/* ==========================================================================
+    Large Layout CSS
+   ========================================================================== */
+/* For large sized screens */
+@media screen and (min-width: 1001px) {
+    .g-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header header header"
+        "main AC AD"
+        "main section section"
+        "footer footer footer";
+    }
+}
