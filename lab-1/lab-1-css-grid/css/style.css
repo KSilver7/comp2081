@@ -11,8 +11,6 @@ html {
     line-height: 1.4;
     color: #000000;
     background-color: bisque;
-    width: auto;
-    height: auto;
     margin: 0;
     padding: 0;
 }
@@ -32,26 +30,32 @@ html {
 header {
     grid-area: header;
     background: pink;
+    padding: 1rem;
 }
 main {
     grid-area: main;
     background: orange;
+    padding: 1rem;
 }
 aside.AC {
     grid-area: AC;
     background: yellow;
+    padding: 1rem;
 }
 aside.AD {
     grid-area: AD;
     background: green;
+    padding: 1rem;
 }
 section {
     grid-area: section;
     background: blue;
+    padding: 1rem;
 }
 footer {
     grid-area: footer;
     background: purple;
+    padding: 1rem;
 }
 
 /* ==========================================================================
