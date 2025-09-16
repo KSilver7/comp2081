@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* ==========================================================================
+   Lab 1 - CSS Grid
+   ========================================================================== */
+/* ==========================================================================
+    Small Layout CSS
+   ========================================================================== */
+/* For small sized screens */
+html {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000000;
+    background-color: bisque;
+}
+.g-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    /* Place the items in the order we want for the grid */
+    grid-template-areas:
+    "header header"
+    "main main"
+    "AC AD"
+    "section section"
+    "footer footer";
+}
+/* Set the grid areas and add a background colour to each section */
+header {
+    grid-area: header;
+    background: pink;
+}
+main {
+    grid-area: main;
+    background: orange;
+}
+aside.AC {
+    grid-area: AC;
+    background: yellow;
+}
+aside.AD {
+    grid-area: AD;
+    background: green;
+}
+section {
+    grid-area: section;
+    background: blue;
+}
+footer {
+    grid-area: footer;
+    background: purple;
+}
+
+/* ==========================================================================
+    Medium Layout CSS
+   ========================================================================== */
+/* For medium sized screens */
+   @media screen and(700px <= width >= 1000px) {
+    /* No new changes to the html */
+} 
