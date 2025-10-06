@@ -5,3 +5,22 @@ html {
     line-height: 1.4;
     font-family: Arial, Helvetica, sans-serif;    
 }
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "head head head"
+        "s1 s2 s2"
+        "s3 s3 as"
+        "foot foot foot";
+    gap: 5px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+}
+.navbar ul li {
+    list-style: none;
+}
