@@ -3,7 +3,8 @@
 html {
     font-size: 16px;
     line-height: 1.4;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: rgb(250, 243, 152);   
 }
 /* This is the article class. The outer Grid.*/
 .big-container {
@@ -35,46 +36,49 @@ html {
 /* Temporarily has colour for visibility.*/
 #s1 {
     grid-area: s1;
-    background-color: red;
+    background-color: rgb(255, 210, 147);
     padding: 1rem;
    
 }
 #s2 {
     grid-area: s2;
-    background-color: orange;
+    background-color: rgb(255, 210, 147);
     padding: 1rem;
 }
 #s3 {
     grid-area: s3;
-    background-color: yellow;
+    background-color: rgb(255, 210, 147);
     padding: 1rem;
 }
 #s4 {
     grid-area: s4;
-    background-color: green;
+    background-color: rgb(255, 210, 147);
     padding: 1rem;
 }
 #s5 {
     grid-area: s5;
-    background-color: blue;
+    /* background-color: rgb(134, 153, 212); */
+    background-color: rgb(255, 210, 147);
     padding: 1rem;
 }
 #as {
     grid-area: as;
-    background-color: purple;
+    /* background-color: rgb(161, 212, 134); */
+    background-color: rgb(255, 210, 147);
     padding: 1rem;
 }
 
 footer {
     grid-area: foot;
-    background-color: pink;
+    /* background-color: rgb(106, 89, 145); */
+    background-color: #EE1753;
+    color: white;
     padding: 1rem;
+    text-align: center;
 }
-
 
 header {
     grid-area: head;
-    background-color: bisque;
     width: 100%;
 }
 
@@ -84,7 +88,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: bisque;
+    background-color:#EE1753;
     width: 100%;   
 }
 
@@ -103,9 +107,16 @@ nav {
 }
 
 .s-name{
-    margin: 0 2rem;
+    margin: 0 1rem;
     font-size: 2rem;
 }
+h2,h3 {
+    color: #EE1753;
+}
+h5 {
+    color: #005e5b
+}
+
 /* Small screens*/
 @media screen and (max-width: 700px) {
     .big-container {
