@@ -27,7 +27,7 @@ html {
         "head head head"
         "s1 s3 s2"
         "s4 s4 as"
-        "s5 s5 as"
+        "s5 s5 s5"
         "foot foot foot";
     gap: 5px;
 }
@@ -36,32 +36,39 @@ html {
 #s1 {
     grid-area: s1;
     background-color: red;
+    padding: 1rem;
    
 }
 #s2 {
     grid-area: s2;
     background-color: orange;
+    padding: 1rem;
 }
 #s3 {
     grid-area: s3;
     background-color: yellow;
+    padding: 1rem;
 }
 #s4 {
     grid-area: s4;
     background-color: green;
+    padding: 1rem;
 }
 #s5 {
     grid-area: s5;
     background-color: blue;
+    padding: 1rem;
 }
 #as {
     grid-area: as;
     background-color: purple;
+    padding: 1rem;
 }
 
 footer {
     grid-area: foot;
     background-color: pink;
+    padding: 1rem;
 }
 
 
@@ -69,7 +76,6 @@ header {
     grid-area: head;
     background-color: bisque;
     width: 100%;
-
 }
 
 /* This is the nav bar it takes up the top "row" of the outer Grid.*/
