@@ -10,13 +10,13 @@ body{
 }
 .big-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-area: head;
     grid-template-areas:
-        "head"
-        "main"
-        "foot";
+        "head head head"
+        "main main main"
+        "foot foot foot";
     gap: 5px;
 }
 .main-container {
@@ -33,10 +33,7 @@ body{
     gap: 5px;
 }
 /* list the grid areas for each section*/
-header {
-    grid-area: head;
-    background-color: bisque;
-}
+
 #s1 {
     grid-area: s1;
     background-color: red;
@@ -63,15 +60,35 @@ header {
     background-color: purple;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    background-color: bisque;
-}
 footer {
     grid-area: foot;
     background-color: pink;
 }
+
+/*header and nav bar are giving some issues, so its moved here for now*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    grid-area: head;
+    background-color: bisque;
+    width: 100%;
+}
+/**/
+header nav {
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    width: 100%;
+    /* flex-grow: 1; */
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
 .navbar ul li {
     list-style: none;
+    margin-left: 2rem;
 }
