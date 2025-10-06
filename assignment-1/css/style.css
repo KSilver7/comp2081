@@ -5,9 +5,7 @@ html {
     line-height: 1.4;
     font-family: Arial, Helvetica, sans-serif;    
 }
-body{
-
-}
+/* This is the article class. The outer Grid.*/
 .big-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -19,6 +17,7 @@ body{
         "foot foot foot";
     gap: 5px;
 }
+/* This is the main class. The nested Grid.*/
 .main-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -32,8 +31,8 @@ body{
         "foot foot foot";
     gap: 5px;
 }
-/* list the grid areas for each section*/
-
+/* This list the grid areas for each section. They make up the nested Grid.*/
+/* Temporarily has colour for visibility.*/
 #s1 {
     grid-area: s1;
     background-color: red;
@@ -65,37 +64,20 @@ footer {
     background-color: pink;
 }
 
-/*header and nav bar are giving some issues, so its moved here for now. UL refuses to get bigger and go across the top...*/
+
 header {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-    align-items: center; */
-    /* display: grid;
-    grid-column: 1 / 3;
-    grid-row: 1; */
     grid-area: head;
     background-color: bisque;
     width: 100%;
 
 }
-/* .s-name{
-    
-}
-.logo {
 
-} 
-ul {
-    
-} */
-/**/
+/* This is the nav bar it takes up the top "row" of the outer Grid.*/
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* display: grid;
-    grid-column: 1 / 3; */
     background-color: bisque;
     width: 100%;
 
@@ -111,3 +93,4 @@ nav {
     list-style: none;
     margin-left: 2rem;
 }
+
