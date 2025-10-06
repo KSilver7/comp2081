@@ -65,28 +65,46 @@ footer {
     background-color: pink;
 }
 
-/*header and nav bar are giving some issues, so its moved here for now*/
+/*header and nav bar are giving some issues, so its moved here for now. UL refuses to get bigger and go across the top...*/
 header {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: stretch;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 1;
     grid-area: head;
     background-color: bisque;
     width: 100%;
+    /* grid-template-areas: 
+    "logo s-name ul"; */
 }
+/* .s-name{
+    grid-area: s-name;
+}
+.logo {
+    grid-area: logo;
+}
+ul {
+    grid-area: ul;
+} */
 /**/
 header nav {
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-column: 1 / 3;
     background-color: bisque;
     width: 100%;
-    flex-grow: 1;
+
 }
 
 .navbar ul {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    grid-row: 1;
 }
 .navbar ul li {
     list-style: none;
