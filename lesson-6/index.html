@@ -6,15 +6,35 @@
 		<title>Navbar | Bootstrap</title>
 		<!-- Bootstrap -->
 		<!-- STEP 1: Link to the Bootstrap CSS using a Content Distribution Network (CDN) -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
 		<!-- STEP 16: Link to your custom styles, then open the CSS file in your code editor to add padding or margin to the MAIN element -->
 		<link href="css/custom.css" rel="stylesheet">
 	</head>
 	<body>
 <!-- STEP 3: Build a fluid or a fixed-width container for proper alignment and padding of content-->
-
+		<div class="container">
 <!-- STEP 4: Build out your basic page-level containers, HEADER, MAIN, FOOTER,and add an H1 inside the HEADER to begin the document outline -->
-
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					<a href="#" class="navbar-brand">
+						<img src="img/bootstrap-solid.svg" alt="Bootstrap logo" width="30" height="24" class="d-inline-block align-top" /> Bootstrap
+					</a>
+					<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Account</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Orders</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+						</ul>
+					</div> <!-- .collapse-->
+				</nav>
+			</header>
 <!-- STEP 5: Build out a NAV element with the classes .navbar - add .navbar-light, and .bg-light to set the text and background colors - include role="navigation" for accessibilty -->
 <!-- STEP 6: Construct the branding image and text using .navbar-brand with an A element and .d-inline-block, and .align-top with an img element (point the src to img/bootstrap-solid.svg) -->
 <!-- STEP 7: Include a series of navigation links using a UL element (right after the branding), contained by a DIV -->
@@ -32,6 +52,7 @@
 <!-- STEP 19: Change colors by setting text and background-color on the parent NAV element (.navbar-dark for light-colored text and .bg-dark for the black background theme color) -->
 <!-- STEP 20: Add a custom color to the background of the Navbar (remove the .bg-dark) -->
 <!-- STEP 21: Explore the new Offcanvas navbar! -->
+ 			<main>
 				<h1>Navbar | Bootstrap</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit lobortis dui, eu congue neque placerat in. Aliquam placerat porttitor lectus eu porta. Duis aliquet volutpat magna quis pharetra. Phasellus turpis dui, suscipit lacinia velit quis, hendrerit pellentesque nibh. Nunc sed leo sit amet dui ultricies lobortis ut id ex. Donec efficitur libero at fringilla tempor. Etiam sodales arcu vitae dui finibus tempor at venenatis nunc.</p>
 
@@ -61,11 +82,14 @@
 
 				<h2>…At Last</h2>
 				<p>Aenean felis libero, bibendum sed nunc sit amet, volutpat mattis arcu. Nunc pellentesque ac neque vel iaculis. Cras eget interdum sapien, dictum malesuada arcu. Morbi imperdiet auctor nibh id egestas. Nunc quis luctus diam. Nunc lectus orci, congue a erat sagittis, malesuada blandit nunc. Nulla ornare sem ut sagittis dignissim. Donec maximus, tellus vel maximus varius, turpis ante ultrices urna, non tincidunt velit magna non turpis.</p>
-
+			</main>
+			<footer>
 				<p><small>Learn more about the <a href="https://getbootstrap.com/docs/5.2/components/navbar/" title="View the Bootstrap documentation for the Navbar Component">Bootstrap Navbar Component</a>.</small>
-
+			</footer>
+		</div><!-- .container -->
 		<!-- STEP 2: Attach the supporting JavaScript Libraries -->
-		
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 
 	</body>
 </html>
