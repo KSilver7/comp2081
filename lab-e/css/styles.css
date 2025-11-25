@@ -1,0 +1,21 @@
+@charset "utf-08";
+
+/* SVG styling */
+svg {
+    border: 5px dashed orange;
+    width: 75%;
+    height: auto;
+    /* rotate: 180deg; */
+}
+
+#chart {
+    transition: all 0.5s;
+}
+
+svg:hover {
+    cursor: pointer;
+}
+
+svg:active #chart {
+    height: 75%;
+}
