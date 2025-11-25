@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>SVG, CSS, and JS | COMP2081 Advanced UI Design Using CSS</title>
+		<link href="css/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- STEP 1: Create SVG element -->
+		<svg viewBox="0 0 500 500">
+			<!-- STEP 2: Create main circle for pie graph -->
+			<circle cx="250" cy="250" r="200" fill="#ccc" />
+			<!-- STEP 3: Build the circle that will function as the pie 'wedge' -->
+			<circle id="pieWedge" cx="250" cy="250" r="100" fill="transparent" stroke="cornflowerblue" stroke-width="200" transform="rotate(-90, 250, 250)"/>
+			<!-- STEP OPTIONAL: Build an inside circle to function a a mask, making the pie chart more of a ring than a pie -->
+			
+			<!-- STEP 4: Add the text label to the pie chart, then open up css/styles.css for the next step -->
+			<text x="150" y="280" fill="#fff" font-size="120">85%</text>
+		
+		</svg>
+		<!-- STEP 10: Connect the JavaScript to the HTML, then proceed to js/charts.js for the next step -->
+		<script src="js/charts.js"></script>
+
+		<!-- Thank you to https://mirellavanteulingen.nl/blog/svg-charts-animations.html for the inspiration for this lesson -->
+	</body>
+</html>

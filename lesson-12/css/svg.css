@@ -1,0 +1,33 @@
+ /* STEP 4: Put a diagnostic border around the SVG element and set the height and width to match the numbers in the viewBox attribute */
+            svg {
+                border: 5px dashed green;
+                box-shadow: 5px 5px 10px black;
+                width: 50%;
+                height: auto;
+                perspective: 400px;
+            }
+            /* STEP 6: Remove the fill="red" from the <circle /> element below, then add it to a new rule for the circle element as a CSS property */
+            circle {
+                fill: tomato;
+                r: 150;
+                cx: 250;
+                cy: 250;
+                transition: all 0.5s;
+            }
+            rect {
+                transition: all 0.5s;
+            }
+            /* STEP 7: Remove the r="250" from the <circle /> element below, then add it to the above rule as well */
+            /* STEP 8: Remove the origin coordinates from the <circle /> element below as well and add to the above rule */
+
+            /* STEP 9: Add a :hover pseudoclass for the circle and modify all of the above properties and values set in the circle rule */
+            circle:hover {
+                fill: cornflowerblue;
+                r: 200;
+                transform: rotateY(30deg);
+            }
+            rect:hover {
+                transform: rotateY(40deg);
+            }
+            
+            /* STEP 10: Add a transition for all properties to the circle rule above - SVG2 and CSS play very nicely together! Now let's go to pie-graph.html and build a practical application for SVG and CSS */
