@@ -12,7 +12,7 @@ let percent = document.querySelector("svg text").textContent;
 // STEP 13b: Remove the % sign from the text value
 percent = percent.replaceAll("%", "");
 // STEP 13c: convert the string to an integer
-percent = parceInt(percent, 10);
+percent = parseInt(percent, 10);
 console.log(percent);
 // STEP 13d: Calculate width of pie segment as a percentage of the circumference of the circle - this will be used for the length of the dash part of the stroke
 percent = (percent / 100);
