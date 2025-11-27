@@ -10,3 +10,7 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
