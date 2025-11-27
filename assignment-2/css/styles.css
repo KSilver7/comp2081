@@ -1,1 +1,12 @@
 @charset "utf-8";
+
+/*set up the border box as default*/
+html {
+    line-height: 1.4rem;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+/* making the border-box inherit*/
+*, *::before, *::after {
+    box-sizing: inherit;
+}
