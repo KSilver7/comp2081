@@ -14,3 +14,13 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
+/* Mini to do list ( remember to remove this comment before hand-in):
+-decide on grid layout for the main container
+-consider if a nested grid is needed or not
+-figure out layout(what is going to go where and how)
+- set up carousel with the trilogy books
+-*/
+
+.main-container {
+
+}
