@@ -24,3 +24,11 @@ main {
 .main-container {
 
 }
+.carousel-item {
+    max-width: 100%;
+    height: auto;    
+}
+#trilogy {
+    width: 50%;
+    transform: translateX(50%);
+}

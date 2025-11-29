@@ -2,7 +2,7 @@
 const carouselBooks = document.querySelector("#trilogy");
 
 const carousel = new bootstrap.Carousel(carouselBooks, {
-    interval: 1600,
+    interval: 3200,
     wrap: true,
 });
 
