@@ -9,8 +9,36 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body><!--Make a container to hold everything-->
-    <div class="container">
+    <div class="container mt-5 pt-5">
         <header>
+            <nav class="navbar fixed-top navbar-epand-lg navbar-dark bg-dark">
+                <!-- logo image from https://openclipart.org/detail/20317/book by sheikh_tuhin -->
+                 <a href="#" class="navbar-brand">
+                    <img src="images/sheikh-tuhin-Book.svg" alt="image of an open blue book logo for this site" width="40" height="34" class="d-inline-block align-top" />Home
+                 </a>
+                <button class="navbar-toggler me-1" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--This is for when the screen is small, it should make the hamburger button thingy-->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-2 me-auto">
+                        <!--the navbar sections go here-->
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Other Books</a></li>
+                        <!-- add a little drop down for the separate authors-->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Mercedes Lackey</a></li>
+                                <li><a href="#" class="dropdown-item">Larry Dixon</a></li>
+                                <li><a href="#" class="dropdown-item">Our Partnership</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--.collapse ends here-->
+            </nav>
             <h1>Owlflight by Mercedes Lackey & Larry Dixon</h1>
         </header>
         <main class="main-container">
