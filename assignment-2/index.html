@@ -46,6 +46,38 @@
     wiki article - check for links to photo etc: https://en.wikipedia.org/wiki/Larry_Dixon_(fantasy_artist)
     https://en.wikipedia.org/wiki/Mercedes_Lackey 
     -->
+            <!--Here we make the carousel with the books in the trilogy, with auto play on via ride. Remember that it's 0-indexed-->
+            <div id="trilogy" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#trilogy" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Book 1"></button>
+                    <button type="button" data-bs-target="#trilogy" data-bs-slide-to="1" aria-label="Book 2"></button>
+                    <button type="button" data-bs-target="#trilogy" data-bs-slide-to="2" aria-label="Book 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <figure class="carousel-item active">
+                        <img src="images/owlflight-cover.jpg" class="d-block w-100" alt="owlflight-cover">
+                        <figcaption class="carousel-caption position-absolute top-0 pt-1">
+                            <h5>Book 1 - Owlflight</h5>
+                            <p>The first book in the Owl Mage Trilogy</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="carousel-item">
+                        <img src="images/owlsight-cover.jpg" class="d-block w-100" alt="owlsight-cover">
+                        <figcaption class="carousel-caption position-absolute top-0 pt-1">
+                            <h5>Book 2 - Owlsight</h5>
+                            <p>The second book in the Owl Mage Trilogy</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="carousel-item">
+                        <img src="images/owlknight-cover.jpg" class="d-block w-100" alt="X9X">
+                        <figcaption class="carousel-caption position-absolute top-0 pt-1">
+                            <h5>Book 3 - Owlknight</h5>
+                            <p>The third and final book in the Owl Mage trilogy</p>
+                        </figcaption>
+                    </figure>
+                </div><!--.carousel-inner-->
+                
+            </div>
             <!--Here we make our accordion with its colapse buttons-->
             <div class="accordion" id="accordion1">
                 <section class="accordion-item">
