@@ -90,6 +90,31 @@
                 </button>
             </div><!--.carousel ends here-->
 
+            <!--Tabs section starts here-->
+            <ul class="nav nav-tabs" id="sectionTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="publisher-tab" data-bs-toggle="tab" data-bs-target="#publisher-pane" type="button" role="tab" aria-controls="publisher-pane" aria-selected="true">Publisher</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="bookDetails-tab" data-bs-toggle="tab" data-bs-target="#bookDetails-pane" type="button" role="tab" aria-controls="bookDetails-pane" aria-selected="false">Book Details</button>
+                </li>              
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="publisher-pane" role="tabpanel" aria-labelledby="publisher-tab" tabindex="0"><p>Published by DAW Oct. 1, 1998.</p></div>
+                <div class="tab-pane" id="bookDetails-pane" role="tabpanel" aria-labelledby="bookDetails-tab" tabindex="0">
+                    <ul>
+                        <li>Language: English</li>
+                        <li>Dimensions 10.67 x 2.29 x 117.02 cm (MassMarketPaperback)</li>
+                        <li>
+                            Weight: 198 g 
+                        </li>
+                        <li>
+                            ISBN 0886778042 / 978-0886778040
+                        </li>
+                    </ul>
+                    <p>This is the first book in the Owl Mage trilogy. The book is 352 pages in length.</p></div>
+            </div><!-- tabs section end here-->
+
             <!--Here we make our accordion with its colapse buttons-->
             <div class="accordion" id="accordion1">
                 <section class="accordion-item">
@@ -124,18 +149,7 @@
                 </section>
             </div><!--accordion ends here-->
 
-            <ul class="nav nav-tabs" id="sectionTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="publisher-tab" data-bs-toggle="tab" data-bs-target="#publisher-pane" type="button" role="tab" aria-controls="publisher-pane" aria-selected="true">Publisher</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="bookDetails-tab" data-bs-toggle="tab" data-bs-target="#bookDetails-pane" type="button" role="tab" aria-controls="bookDetails-pane" aria-selected="false">Book Details</button>
-                </li>              
-            </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="publisher-pane" role="tabpanel" aria-labelledby="publisher-tab" tabindex="0">...<p>52652622</p></div>
-                    <div class="tab-pane" id="bookDetails-pane" role="tabpanel" aria-labelledby="bookDetails-tab" tabindex="0"><p>jhjghghg</p></div>
-                </div>
+            
         </main>
         <footer>
             <p><small>@Kristina Hocken Fall 2025</small></p>
