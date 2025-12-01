@@ -9,7 +9,7 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body><!--Make a container to hold everything-->
-    <div class="container mt-5 pt-5">
+    <div class="container mt-1 pt-1">
         <header>
             <nav class="navbar fixed-top navbar-epand-lg navbar-dark bg-dark">
                 <!-- logo image from https://openclipart.org/detail/20317/book by sheikh_tuhin -->
@@ -41,11 +41,19 @@
             </nav>
             <h1>Owlflight by Mercedes Lackey & Larry Dixon</h1>
         </header>
+
         <main class="main-container">
-    <!-- Video to possibly add with the authors https://www.youtube.com/watch?v=hyw4wZi3sy0 
-    wiki article - check for links to photo etc: https://en.wikipedia.org/wiki/Larry_Dixon_(fantasy_artist)
-    https://en.wikipedia.org/wiki/Mercedes_Lackey 
-    -->
+            <div id="book">
+                <img src="images/owlflight-cover.jpg" alt="Cover for the book Owlflight. A boy with an arrow in the woods. A large owl behind him.">
+            </div>
+            <div id="author1">
+                <img src="images/Mercedes_Lackey.jpg" alt="Mercedes Lackey (author)">
+                <!--image from her wiki page https://en.wikipedia.org/wiki/Mercedes_Lackey -->
+            </div>
+            <div id="author2">
+                <img src="images/Larry_Dixon.jpg" alt="Larry Dixon (author and artist)">
+                <!--image from wiki page for Larry dixon: https://en.wikipedia.org/wiki/Larry_Dixon_%28fantasy_artist%29 -->
+            </div>
             <!--Here we make the carousel with the books in the trilogy, with auto play on via ride. Remember that it's 0-indexed-->
             <div id="trilogy" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -91,28 +99,30 @@
             </div><!--.carousel ends here-->
 
             <!--Tabs section starts here-->
-            <ul class="nav nav-tabs" id="sectionTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="publisher-tab" data-bs-toggle="tab" data-bs-target="#publisher-pane" type="button" role="tab" aria-controls="publisher-pane" aria-selected="true">Publisher</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="bookDetails-tab" data-bs-toggle="tab" data-bs-target="#bookDetails-pane" type="button" role="tab" aria-controls="bookDetails-pane" aria-selected="false">Book Details</button>
-                </li>              
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="publisher-pane" role="tabpanel" aria-labelledby="publisher-tab" tabindex="0"><p>Published by DAW Oct. 1, 1998.</p></div>
-                <div class="tab-pane" id="bookDetails-pane" role="tabpanel" aria-labelledby="bookDetails-tab" tabindex="0">
-                    <ul>
-                        <li>Language: English</li>
-                        <li>Dimensions 10.67 x 2.29 x 117.02 cm (MassMarketPaperback)</li>
-                        <li>
-                            Weight: 198 g 
-                        </li>
-                        <li>
-                            ISBN 0886778042 / 978-0886778040
-                        </li>
-                    </ul>
-                    <p>This is the first book in the Owl Mage trilogy. The book is 352 pages in length.</p></div>
+            <div id="tabsarea">
+                <ul class="nav nav-tabs" id="sectionTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="publisher-tab" data-bs-toggle="tab" data-bs-target="#publisher-pane" type="button" role="tab" aria-controls="publisher-pane" aria-selected="true">Publisher</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bookDetails-tab" data-bs-toggle="tab" data-bs-target="#bookDetails-pane" type="button" role="tab" aria-controls="bookDetails-pane" aria-selected="false">Book Details</button>
+                    </li>              
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="publisher-pane" role="tabpanel" aria-labelledby="publisher-tab" tabindex="0"><p>Published by DAW Oct. 1, 1998.</p></div>
+                    <div class="tab-pane" id="bookDetails-pane" role="tabpanel" aria-labelledby="bookDetails-tab" tabindex="0">
+                        <ul>
+                            <li>Language: English</li>
+                            <li>Dimensions 10.67 x 2.29 x 117.02 cm (MassMarketPaperback)</li>
+                            <li>
+                                Weight: 198 g 
+                            </li>
+                            <li>
+                                ISBN 0886778042 / 978-0886778040
+                            </li>
+                        </ul>
+                        <p>This is the first book in the Owl Mage trilogy. The book is 352 pages in length.</p></div>
+                </div>
             </div><!-- tabs section end here-->
 
             <!--Here we make our accordion with its colapse buttons-->

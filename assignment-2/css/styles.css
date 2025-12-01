@@ -2,33 +2,63 @@
 
 /*set up the border box as default*/
 html {
-    line-height: 1.4rem;
     box-sizing: border-box;
-    font-size: 16px;
 }
 /* making the border-box inherit*/
 *, *::before, *::after {
     box-sizing: inherit;
 }
-main {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+html {
+    font-size: 16px;
+    line-height: 1.4rem;
+    background-color: antiquewhite;
 }
-/* Mini to do list ( remember to remove this comment before hand-in):
--decide on grid layout for the main container
--consider if a nested grid is needed or not
--figure out layout(what is going to go where and how)
-- set up carousel with the trilogy books
--*/
 
-.main-container {
-
-}
 .carousel-item {
     max-width: 100%;
     height: auto;    
 }
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: 
+    "header header"
+    "Book author1"
+    "Book author2"
+    "carousel carousel"
+    "tabs tabs"
+    "acc acc";
+}
+
+header {
+    grid-area: header;
+}
+#author1 {
+    grid-area: author1;
+}
+#author2 {
+    grid-area: author2;
+}
+#book {
+   grid-area: Book; 
+}
 #trilogy {
     width: 50%;
     transform: translateX(50%);
+    grid-area: carousel;
+}
+
+#tabsarea {
+    grid-area: tabs;
+}
+
+#accordion1 {
+    grid-area: acc;
+}
+footer {
+    background-color: rgb(212, 245, 234);
 }
