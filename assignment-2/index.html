@@ -9,7 +9,7 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body><!--Make a container to hold everything-->
-    <div class="container mt-1 pt-1">
+    <div class="container mt-5 pt-5">
         <header>
             <nav class="navbar fixed-top navbar-epand-lg navbar-dark bg-dark">
                 <!-- logo image from https://openclipart.org/detail/20317/book by sheikh_tuhin -->
@@ -43,17 +43,29 @@
         </header>
 
         <main class="main-container">
-            <div id="book">
+            <aside id="book">
                 <img src="images/owlflight-cover.jpg" alt="Cover for the book Owlflight. A boy with an arrow in the woods. A large owl behind him.">
-            </div>
-            <div id="author1">
+            </aside>
+            <aside id="author1">
                 <img src="images/Mercedes_Lackey.jpg" alt="Mercedes Lackey (author)">
                 <!--image from her wiki page https://en.wikipedia.org/wiki/Mercedes_Lackey -->
-            </div>
-            <div id="author2">
+            </aside>
+            <aside id="author2">
                 <img src="images/Larry_Dixon.jpg" alt="Larry Dixon (author and artist)">
                 <!--image from wiki page for Larry dixon: https://en.wikipedia.org/wiki/Larry_Dixon_%28fantasy_artist%29 -->
-            </div>
+            </aside>
+            <article id="syn">
+                <h3>Synopsis</h3>
+                <p>New York Times-bestselling author: Take flight with the first adventure in the Owl Mage trilogy—an epic fantasy full of action, gryphons, and an elf-like race that forms magical bonds with birds!<br />
+
+                After fleeing into the forest when barbarians attack his village, a young orphan encounters the Hawkbrothers—and finds his place among them.<br />
+
+                Darian’s parents had been hunters who worked in the Pelagiris forest, trapping the bizarre change-creatures which had been created by the mage-storms, and selling their fantastic hides. But Darian had not accompanied them on their last expedition into the Pelagiris—a hunt from which they never returned.<br />
+
+                Now Darian is apprenticed to Wizard Justyn, a kindly old man who insists that Darian has “talent.” But Darian, grieving over his parents, has no interest in magic—and instead of studying, finds solace in the forest, where can hide among the huge trees and mourn in privacy.<br />
+
+                It is from this secret retreat on the edge of the Pelagiris that Darian sees an army of northern barbarians sack and burn his village. Alone and helpless, Darian flees into the deep forest. But unbeknownst to him, the Hawkbrothers—an old, magical, and elf-like race—dwell in the ancient woods, and his flight will lead him on a path of discovery which neither Justyn nor Darian’s parents could have ever predicted.</p>
+            </article>
             <!--Here we make the carousel with the books in the trilogy, with auto play on via ride. Remember that it's 0-indexed-->
             <div id="trilogy" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -125,35 +137,42 @@
                 </div>
             </div><!-- tabs section end here-->
 
-            <!--Here we make our accordion with its colapse buttons-->
+            <!--Here we make our accordion with its colapse buttons
+            all reviews are from https://www.amazon.ca/Owlflight-Owl-Mage-Trilogy-Book-ebook/dp/B002J05GZS -->
             <div class="accordion" id="accordion1">
                 <section class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">Section 1</button>
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">Review 1</button>
                     </h2>
                     <div id="collapse1" class="accordion-collapse collapse show">
                         <div class="accordion-body">
-                            <p>body info here</p>
+                            <p>Review by Klaus Kreitz</p>
+                            <p>Brilliant, Fascinating, Unique</p>
+                            <p>This is book one of a trilogy (Owl Flight; Owl Sight; Owl Knight), so will review it as an entire set. I enjoyed it. I particularly appreciate the way in which Lackey introduces a young character and then allows us to experience that young character's journey into adulthood. I purchased the first volume because of the title (I collect owl figurines!) and was pleasantly surprised at how much I enjoyed Owl Flight, and how anxiously I awaited the publication of the subsequent books in the series, which continued the joyous arc of our hero's journey. Anyone who had read Mercedes Lackey's Valdemar series will understand the detailed descriptions with which she fills her narratives, and how deftly she paints a picture, with a few words, of each location. More so, there is a passion in her writing which seems to make the characters come to life, and in this series, one can almost hear the owl-wings beating. Definitely a worthy addition to the Valdemar series, that keeps on giving joy to this reader.</p>
                         </div>
                     </div><!--#collapse1 ends here-->
                 </section>
                 <section class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">Section 2</button>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">Review 2</button>
                     </h2>
                     <div id="collapse2" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            <p> body info 2 here</p>
+                            <p>Review by mummyb</p>
+                            <p>Owlflight</p>
+                            <p> This book is,like all in the Valdemar series, totally engrossing it rounds off the earlier tales, tying up loose ends, while leaving room for more in the future -- I can't wait to get to the next (e)book. Darian is a well rounded character, who is all too human in his faults, and Kelvren brings us up to date on the Gryphon 'family'thnx  </p>
                         </div>
                     </div><!--#collapse2 ends here-->
                 </section>
                 <section class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">Section 3</button> 
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">Review 3</button> 
                     </h2>
                     <div id="collapse3" class="accordion-collapse collapse">
                         <div class="accordion-body">
-                            <p>body info 3 here</p>
+                            <p>Review by Edith Lamotte</p>
+                            <p>Good read.</p>
+                            <p>Good characters. Up to the usual standards I expect from this author. Fabulous addition to the Valdemar world.</p>
                         </div>
                     </div><!--#collapse3 ends here-->
                 </section>
