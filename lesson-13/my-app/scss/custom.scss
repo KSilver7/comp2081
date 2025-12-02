@@ -1,0 +1,9 @@
+// STEP 8: Import your brand colours - this MUST be done before importing Bootstrap
+@import "brand";
+
+// STEP 9: Import the Bootstrap framework (type the file path carefully)
+@import "bootstrap-5.3.8/bootstrap";
+
+// STEP 10: Save this file, and watch the SASS compile, then have a look at the my-app/css directory to see all the generated files
+
+// STEP 11: Open my-app/index.html in a browser to see the result
