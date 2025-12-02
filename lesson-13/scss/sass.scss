@@ -1,61 +1,93 @@
-/* STEP 1: Declare and use variables */
+@charset "utf-8";
+@import "reset";
 
+/* STEP 1: Declare and use variables */
+$font-stack: Helvetica, Arial, sans-serif;
+$primary-color: grey;
+$secondary-color: slateblue;
+$background-color: lightgrey;
+$whitespace: 1rem;
 
 body {
-	
+	font: 120%/1.4 $font-stack;
+	color: $primary-color;
 }
 
 /* STEP 2: Nesting CSS selectors */
-
+header {
+	h1 {
+		color: $secondary-color
+	}
+	p {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+}
 
 /* STEP 3: Partials and Importing */
 /* Open reset.css, rename it _reset.scss and put @import 'reset'; at the top of this .scss file */
 
 /* STEP 4: Mixins */
+@mixin rounded-box($radius, $shadow-color) {
+	border-radius: $radius;
+	box-shadow: 2px 2px 3px $shadow-color;
+	border: 5px solid $primary-color;
+	background-color: $background-color;
+	padding: $whitespace;
+	margin: $whitespace;
+}
 
 header {
-	
+	@include rounded-box(10px, orange);
 }
 
 main {
-	
+	margin: $whitespace;
 }
 
 footer {
-	
+	@include rounded-box(10px, red);
 }
 
 /* STEP 5: Extend/Inheritance */
 
 .message {
-	
+	border: 5px dotted $primary-color;
+	padding: $whitespace;
+	margin: $whitespace;
+	color: black;
+	font-weight: bold;
+	background-color: lightblue;
 }
 
 .success {
-
+	@extend .message;
+	background-color: lightgreen;
 }
 
 .error {
-
+	@extend .message;
+	background-color: pink;
 }
 
 .warning {
-
+	@extend .message;
+	background-color: orange;
 }
 
 /* STEP 5: Operators */
 main > section { 
 	width: 100%;
 	margin: 0 auto;
-	display: flex;
+	// display: flex;
 }
 
 main > section > article {
-
+	width: 600px / 960px * 100%;
 }
 
 main > section > aside {
-
+	
 }
 
 /* http://sass-lang.com/guide */
