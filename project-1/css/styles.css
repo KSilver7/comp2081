@@ -43,10 +43,18 @@ main {
 }
 /*made a background and increased font weight for the nav items. Trying this out for the active tab*/
 .nav-item.active .nav-link {
-    /* background-color: #abaaaa; Nah lets use a woodgrain*/
+    /* background-color: #abaaaa; Nah lets use a woodgrain
+    
+    image from https://www.pexels.com/photo/brown-wooden-surface-172296/ by FWStudio
+    */
     background-image: url('../images/woodgrain.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: bold;
     border-radius: 0.5rem 0.5rem 0 0;
+}
+div .col-12 {
+    border: 3px dashed black;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
