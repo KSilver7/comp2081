@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 #newCars {
     width: 50%;
     transform: translateX(50%);
@@ -8,9 +7,11 @@
 .carousel-item {
     height: auto;   
 }
+
 .carousel-caption {
     color: black;
 }
+/*added a nice light blueish background to revamp the old site look*/
 body {
     background-color: #add1f3;
 }
@@ -20,6 +21,7 @@ h1 {
 main {
     padding: 2rem;
 }
+/*added background colours and some padding*/
 #r1-1, #r1-2, #r1-3 {
     background-color: #abaaaa;
     padding-top: 1rem;
@@ -32,9 +34,15 @@ main {
     background-color: #f2ff00;
     padding-top: 1rem;
 }
+/*moved the arrows to the outside of the frame*/
 #newCars .carousel-control-prev {
     left: -5rem;
 }
 #newCars .carousel-control-next {
     right: -5rem;
+}
+/*made a background and increased font weight for the nav items. Trying this out for the active tab*/
+.nav-item.active .nav-link {
+    background-color: #abaaaa;
+    font-weight: bold;
 }
