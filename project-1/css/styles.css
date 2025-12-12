@@ -3,3 +3,23 @@
 .container {
     margin: 0;
 }
+
+#newCars {
+    width: 50%;
+    transform: translateX(50%);
+}
+.carousel-item {
+    height: auto;   
+}
+.carousel-caption {
+    color: black;
+}
+body {
+    background-color: #add1f3;
+}
+h1 {
+    padding: 2rem;
+}
+main {
+    padding: 2rem;
+}
