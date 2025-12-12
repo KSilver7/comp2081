@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Contact</title>
     <!--Add bootstrap and css here-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" />
@@ -40,10 +40,30 @@
                     </div>
                 </div>
             </nav>
-            <h1>About Automoblox</h1>
+            <h1>Contact Us</h1>
     </header>
     <main class="container">
-        <p>Automoblox is Mauris eget ornare augue, laoreet aliquet libero. Vivamus maximus, sapien vel molestie dapibus, nisl arcu malesuada ex, ut dignissim dui sem ac ligula. In elementum risus vitae mi dictum, quis placerat diam semper. Maecenas eu sapien sit amet diam cursus sodales ut quis justo.</p>
+        <p>Questions or concerns about our product? Please reach out to us by filling out the form below. Thanks ~ The Automoblox Team</p>
+        <form>
+            <div class="form-group">
+                <label for="emailInput">Email Address</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="modelSelect">Select Subject</label>
+                <select class="form-control" id="modelSelect">
+                    <option>Issues with product</option>
+                    <option>Questions about product</option>
+                    <option>Return/Refund</option>
+                    <option>General Questions</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="messageTextarea">Your Message</label>
+                <textarea class="form-control" id="messageTextarea" rows="5" placeholder="Type your message here"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </main>
     <footer class="container-fluid bg-light">
         <p><small> @Automoblox and Kristina Hocken 2025</small></p>

@@ -32,3 +32,9 @@ main {
     background-color: #f2ff00;
     padding-top: 1rem;
 }
+#newCars .carousel-control-prev {
+    left: -5rem;
+}
+#newCars .carousel-control-next {
+    right: -5rem;
+}
