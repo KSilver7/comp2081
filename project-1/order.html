@@ -42,7 +42,55 @@
             <h1>Order Page</h1>
     </header>
     <main>
-        <p>This is the order page for Automoblox.</p>
+        <p>This is the order page for Automoblox. These are the currently available models:</p>
+        <div id="tabsarea">
+                <ul class="nav nav-tabs" id="sectionTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="modelA" data-bs-toggle="tab" data-bs-target="#modelA-pane" type="button" role="tab" aria-controls="modelA-pane" aria-selected="true">Model A</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modelB-tab" data-bs-toggle="tab" data-bs-target="#modelB-pane" type="button" role="tab" aria-controls="modelB-pane" aria-selected="false">Model B</button>
+                    </li> 
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modelC-tab" data-bs-toggle="tab" data-bs-target="#modelC-pane" type="button" role="tab" aria-controls="modelC-pane" aria-selected="false">Model C</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modelD-tab" data-bs-toggle="tab" data-bs-target="#modelD-pane" type="button" role="tab" aria-controls="modelD-pane" aria-selected="false">Model D</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="modelE-tab" data-bs-toggle="tab" data-bs-target="#modelE-pane" type="button" role="tab" aria-controls="modelE-pane" aria-selected="false">Model E</button>
+                    </li>             
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="modelA-pane" role="tabpanel" aria-labelledby="modelA-tab" tabindex="0">
+                        <h2>Model A</h2>
+                        <p>This wooden car has an orange top and orange tires.</p>
+                        <img src="images/a9_large.jpg" alt="Automoblox Model A" />
+                    </div>
+
+                    <div class="tab-pane" id="modelB-pane" role="tabpanel" aria-labelledby="modelB-tab" tabindex="0">
+                        <h2>Model B</h2>
+                        <p>This wooden car has a sleek look with its silver top and silver tires.</p>
+                        <img src="images/a9s_large.jpg" alt="Automoblox Model B" />
+                    </div>
+                    <div class="tab-pane" id="modelC-pane" role="tabpanel" aria-labelledby="modelC-tab" tabindex="0">
+                        <h2>Model C</h2>
+                        <p>This wooden car features a vibrant red top and matching red tires.</p>
+                        <img src="images/c9_large.jpg" alt="Automoblox Model C" />
+                    </div>
+                    <div class="tab-pane" id="modelD-pane" role="tabpanel" aria-labelledby="modelD-tab" tabindex="0">
+                        <h2>Model D</h2>
+                        <p>This wooden car stands out with its cool blue top and blue tires.</p>
+                        <img src="images/m9_large.jpg" alt="Automoblox Model D" />
+                    </div>
+                    <div class="tab-pane" id="modelE-pane" role="tabpanel" aria-labelledby="modelE-tab" tabindex="0">
+                        <h2>Model E</h2>
+                        <p>This wooden car boasts a bright green top and green tires. It is designed similar to a pickup truck.</p>
+                        <img src="images/t9_large.jpg" alt="Automoblox Model E" />
+                    </div>
+                </div>
+            </div><!-- tabs section end here-->
+        
         <form>
             <div class="form-group">
                 <label for="emailInput">Email Address</label>
